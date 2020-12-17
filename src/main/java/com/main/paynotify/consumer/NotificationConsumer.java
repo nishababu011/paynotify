@@ -16,6 +16,8 @@ public class NotificationConsumer {
     public void receiveMessage(@Payload PayNotifyMessage message, @Headers MessageHeaders headers) {
         log.info("Received Payment Notification -> {}", message);
         headers.keySet().forEach(k -> log.info("Header {} -> {}", k, headers.get(k)));
+        // Implementation to send the notification to customer can be done here.
+        //It can be a another microservice call.
     }
 
 }
