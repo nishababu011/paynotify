@@ -1,0 +1,12 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /paynotify
+
+
+kafka:
+  bootstrap: "localhost:9092"
+  inputtopic: topics.payments-incoming
+
+
+
